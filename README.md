@@ -9,6 +9,7 @@ The tutorial has been followed to the letter, with the exception of the followin
 * The list of users registered appears also as a definition list; 
 * There is a link to view the list of registered users on the collection form;
 * There is an additional route that shows the HTTP headers from the request;
+* The Bootstrap source is referenced via CDN, not with a local inclusion;
 
 ## Technology stack
 
