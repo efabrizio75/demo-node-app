@@ -6,7 +6,7 @@ block content
    div.form-wrapper
       if errors
          ul.error-messages
-            for err in errors 
+            each err in errors 
                li=err.msg
 
       form(action="." method="post")
