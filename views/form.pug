@@ -1,0 +1,50 @@
+extends layout
+
+block content
+   -data = data || {}
+
+   div.form-wrapper
+      if errors
+         ul.error-messages
+            for err in errors 
+               li=err.msg
+
+      form(action="." method="post")
+         div.mb-3
+            label(for="name", class="form-label") Name:
+            input(
+               class="form-control form-control-lg"
+               type="text"
+               id="name"
+               name="name"
+               value=data.name
+               placeholder="Your name in here"
+            )
+            div.form-text="Your name must be 3-20 characters long."
+            
+
+         div.mb-3
+            label(for="email", class="form-label") Email:
+            input(
+               class="form-control form-control-lg"
+               type="email"
+               id="email"
+               name="email"
+               value=data.email
+               placeholder="Your email in here"
+            )
+            div.form-text="Your email must be at least 5 characters long."
+         
+         input(
+            class="btn btn-primary"
+            type="submit"
+            value="Submit"
+         )
+      hr
+      p.mt-3.d-block You can also
+         |
+         |
+         a(href='/registrations') review the list
+         |
+         |
+         =`of all attendees`

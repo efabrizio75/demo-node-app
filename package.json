@@ -1,0 +1,25 @@
+{
+  "name": "demo-node-app",
+  "version": "1.0.0",
+  "description": "A simple Node app using Express for backend, Pug for frontend templates, and MongoDB for data retention. Based on a tutorial by James Hibbard (https://github.com/jameshibbard/demo-node-app/)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Emanuele Fabrizio <efabrizio@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "http-auth": "^4.2.0",
+    "mongoose": "^7.3.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

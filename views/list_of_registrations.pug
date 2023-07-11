@@ -1,0 +1,23 @@
+extends layout
+
+block content
+   div.container
+      if dataFetched.length > 0
+         table.table.table-bordered.table-striped.table-hover.mt-5
+            caption.caption-top.text-center List of all participants registered so far
+            thead.table-info
+               tr
+                  th Name
+                  th Email
+            for entry in dataFetched
+               tr
+                  td= entry.name
+                  td= entry.email
+         hr
+         p The same data presented with a Definition List semantic 
+         dl
+            for entry in dataFetched  
+               dt=entry.name
+               dd=entry.email
+      else 
+         p Nobody registered so far

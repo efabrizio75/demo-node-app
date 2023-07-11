@@ -1,0 +1,42 @@
+html {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ *, *:before, *:after {
+   -webkit-box-sizing: inherit;
+   -moz-box-sizing: inherit;
+   box-sizing: inherit;
+ } 
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
+ 
+ .container h1 {
+  text-underline-offset: 2vh;
+ }
+
+ .form-wrapper {
+   max-width: 450px;
+   margin: auto;
+ }
+ 
+ .form-wrapper .form-control,
+ .form-wrapper .btn {
+   width: 100%;
+ }
+ 
+ .error-messages {
+   color: red;
+   list-style: none;
+   padding: 0;
+   margin-bottom: 10px;
+ }
+ 
+ .error-messages li::before {
+   content: "•";
+   margin-right: 5px;
+ }
